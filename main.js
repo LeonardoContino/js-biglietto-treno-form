@@ -28,6 +28,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 const km = document.getElementById("inputkm");
 const name = document.getElementById("inputname");
 const button = document.getElementById("click");
-// console.log("km", "name");
+console.log("km", "name", "button");
 
+const km = innerText("quanti km vuoi fare?");
 // 1
