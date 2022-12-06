@@ -36,12 +36,12 @@ button.addEventListener("click", function () {
   console.log(km.value, userAge.value, button);
   let price = km.value * 0.21;
   console.log(price);
-  if (km <= 0 || userAge <= 0) {
+  if (km <= 0) {
     alert("i dati inseirti non sono corretti");
   } else {
-    if (userAge > 65) {
+    if ((userAge = over65)) {
       price = price * 0.6;
-    } else if (userAge < 18) {
+    } else if ((userAge = minorenne)) {
       price = price * 0.8;
     }
     finalprice.innerText = price.toFixed(2) + "€";
