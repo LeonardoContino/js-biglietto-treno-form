@@ -23,3 +23,8 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 6.validare il prezzo in decimale
 7.fare l'estetica con il css
 */
+
+// 0
+const km = document.getElementById("inputkm");
+const name = document.getElementById("inputname");
+console.log("km", "name");
