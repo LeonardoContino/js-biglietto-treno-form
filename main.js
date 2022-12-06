@@ -17,7 +17,7 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
  0. mettere elementi del dom
  1. chiedere il numero di chimoletri che deve fare con input
  2. chiedere l'età al passeggiero con input
-3.calcolare il prezzo del biglietto con un bottone
+ -3 collare bottone a km e età per calcolarlo
 4.applicare sconto minorenne e over 65 con il select
 5.validare km e età
 6.validare il prezzo in decimale
@@ -26,9 +26,10 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 
 // 0
 const km = document.getElementById("inputkm");
-const name = document.getElementById("inputname");
+const userAge = document.getElementById("inputnage");
 const button = document.getElementById("click");
-console.log("km", "name", "button");
+console.log("km", "userAge", "button");
 
-const km = innerText("quanti km vuoi fare?");
-// 1
+//3
+buttom = "km" + "userAge";
+console.log(buttom);
