@@ -39,15 +39,10 @@ button.addEventListener("click", function () {
   //   console.log(km.value, userAge.value, button);
   let price = km.value * 0.21;
   //   console.log(price);
-  if (km <= 0) {
-    alert("i dati inseirti non sono corretti");
-  } else {
-    if ((ageover65.value = over65)) {
-      price = price * 0.6;
-    } else if ((ageminore.value = minorenne)) {
-      price = price * 0.8;
-    }
-    finalprice.innerText = price.toFixed(2) + "€";
+  if (ageadult.value) {
+    price = price;
+
+    console.log(ageadult.value);
   }
 });
 //4
