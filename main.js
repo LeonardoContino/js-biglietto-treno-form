@@ -25,11 +25,26 @@ Sulla base di queste informazioni dovrà calcolare il prezzo totale del bigliett
 */
 
 // 0
-const km = document.getElementById("inputkm");
-const userAge = document.getElementById("inputnage");
 const button = document.getElementById("click");
-console.log("km", "userAge", "button");
+const km = document.getElementById("inputkm");
+const userAge = document.getElementById("inputage");
+let finalprice = document.querySelector(".finalprice");
+console.log(finalprice);
 
 //3
-buttom = "km" + "userAge";
-console.log(buttom);
+button.addEventListener("click", function () {
+  console.log(km.value, userAge.value, button);
+  let price = km.value * 0.21;
+  console.log(price);
+  if (km <= 0 || userAge <= 0) {
+    alert("i dati inseirti non sono corretti");
+  } else {
+    if (userAge > 65) {
+      price = price * 0.6;
+    } else if (userAge < 18) {
+      price = price * 0.8;
+    }
+    finalprice.innerText = price.toFixed(2) + "€";
+  }
+});
+//4
