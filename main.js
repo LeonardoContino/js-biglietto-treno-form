@@ -29,19 +29,22 @@ const button = document.getElementById("click");
 const km = document.getElementById("inputkm");
 const userAge = document.getElementById("inputage");
 let finalprice = document.querySelector(".finalprice");
-console.log(finalprice);
+// console.log(finalprice);
+const ageminore = document.getElementsByClassName("ageminore");
+const ageadult = document.getElementsByClassName("ageadult");
+const ageover65 = document.getElementsByClassName("ageover65");
 
 //3
 button.addEventListener("click", function () {
-  console.log(km.value, userAge.value, button);
+  //   console.log(km.value, userAge.value, button);
   let price = km.value * 0.21;
-  console.log(price);
+  //   console.log(price);
   if (km <= 0) {
     alert("i dati inseirti non sono corretti");
   } else {
-    if ((userAge = over65)) {
+    if ((ageover65.value = over65)) {
       price = price * 0.6;
-    } else if ((userAge = minorenne)) {
+    } else if ((ageminore.value = minorenne)) {
       price = price * 0.8;
     }
     finalprice.innerText = price.toFixed(2) + "€";
